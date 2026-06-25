@@ -115,4 +115,4 @@ class TodoViewTestCase(TestCase):
         client = Client()
         response = client.get('/1/')
 
-        self.assertEqual(response.status_code, 400)
+        self.assertEqual(response.status_code, 404)
